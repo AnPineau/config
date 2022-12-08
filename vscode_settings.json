@@ -1,0 +1,322 @@
+{
+  "git.ignoreMissingGitWarning": true,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.suggestSelection": "first",
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "explorer.confirmDelete": false,
+  "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.minimap.enabled": false,
+  "editor.find.cursorMoveOnType": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "update.showReleaseNotes": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "eslint.packageManager": "yarn",
+  "files.eol": "\n",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.associations": {
+    "*.env.development": "env",
+    "*.env.production": "env"
+  },
+  "synthwave84.brightness": 0.45,
+  "errorLens.onSave": false,
+  "errorLens.messageBackgroundMode": "none",
+  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
+  "prettier.printWidth": 160,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+
+  "vim.smartRelativeLine": true,
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.handleKeys": {
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-y>": false,
+    "<C-a>": false,
+    "<backspace>": false,
+  },
+
+  // MULTI-COMMAND
+  "multiCommand.commands": {
+    "extension.multiCommand.ctrld": {
+        "interval": 30, // Ne fonctionne pas sans cet interval
+        "sequence": [
+            "toggleVim",
+            "editor.action.addSelectionToNextFindMatch"
+        ]
+    }
+  },
+
+  // VIM
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["w"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    },
+
+    {
+      "before": ["&"],
+      "after": ["1"]
+    },
+    {
+      "before": ["é"],
+      "after": ["2"]
+    },
+    {
+      "before": ["\""],
+      "after": ["3"]
+    },
+    {
+      "before": ["'"],
+      "after": ["4"]
+    },
+    {
+      "before": ["("],
+      "after": ["5"]
+    },
+    {
+      "before": ["-"],
+      "after": ["6"]
+    },
+    {
+      "before": ["è"],
+      "after": ["7"]
+    },
+    {
+      "before": ["_"],
+      "after": ["8"]
+    },
+    {
+      "before": ["ç"],
+      "after": ["9"]
+    },
+    {
+      "before": ["à"],
+      "after": ["0"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["w"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    },
+    {
+      "before": ["e"],
+      "commands": ["toggleVim", "editor.action.addSelectionToNextFindMatch"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["w"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    },
+    {
+      "before": ["e"],
+      "commands": ["toggleVim", "editor.action.addSelectionToNextFindMatch"]
+    }
+  ],
+
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeLensFontFamily": "CaskaydiaCove NF",
+  "extensions.ignoreRecommendations": true,
+  "git.suggestSmartCommit": false,
+"editor.fontSize": 13,
+"workbench.colorTheme": "Vim Dark Hard"
+}

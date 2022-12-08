@@ -1,0 +1,257 @@
+[
+  {
+    "key": "ctrl+k j",
+    "command": "clever.maximize.toggleWithSidebar",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k q",
+    "command": "workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+k f",
+    "command": "-workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+k n",
+    "command": "workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+left",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-editor.foldAllExcept",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+numpad8",
+    "command": "markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+numpad9",
+    "command": "editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "toggleVim",
+    "when": "!vim.active"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "toggleVim",
+    "when": "!vim.active"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "cursorWordLeft",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+k",
+    "command": "cursorLeftSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "cursorWordEndLeftSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+m",
+    "command": "cursorRightSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "cursorWordEndRightSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "",
+    "when": "!vim.active"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "vim.active"
+  },
+  {
+    "key": "alt+o",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+p",
+    "command": "cursorEndSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "shift+i",
+    "command": "cursorHomeSelect",
+    "when": "vim.active"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "x",
+    "command": "editor.action.deleteLines",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "tab",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "backspace",
+    "command": "deleteLeft",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "cursorWordPartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "cursorWordPartRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+backspace",
+    "command": "deleteWordPartLeft",
+    "when": "editorTextFocus"
+  },
+
+  // Necessite l'extension multi-command
+  {
+    "key": "d",
+    "command": "extension.multiCommand.ctrld",
+    "when": "vim.active && editorTextFocus && !editorTabMovesFocus"
+  },
+
+  {
+    "key": "ctrl+oem_6",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "selectNextSuggestion",
+    "when": "!vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+o",
+    "command": "selectPrevSuggestion",
+    "when": "!vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "cursorRight",
+    "when": "!vim.active"
+  },
+  {
+    "key": "alt+k",
+    "command": "cursorLeft",
+    "when": "!vim.active"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "cursorWordLeft",
+    "when": "!vim.active"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "cursorWordRight",
+    "when": "!vim.active"
+  }
+]
