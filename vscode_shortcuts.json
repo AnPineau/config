@@ -220,20 +220,40 @@
   },
 
   {
-    "key": "ctrl+oem_6",
+,    "key": ",",
     "command": "editor.action.showHover",
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && vim.active"
   },
   {
-    "key": "alt+l",
+    "key": "ctrl+,",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorTextFocus && vim.active"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus && vim.active"
+  },
+  {
+    "key": "ctrl+l",
     "command": "selectNextSuggestion",
     "when": "!vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "alt+o",
+    "key": "ctrl+o",
     "command": "selectPrevSuggestion",
     "when": "!vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
+  // {
+  //   "key": "ctrl+l",
+  //   "command": "selectNextCodeAction",
+  //   "when": "CodeActionMenuVisible"
+  // },
+  // {
+  //   "key": "ctrl+o",
+  //   "command": "selectNextCodeAction",
+  //   "when": "CodeActionMenuVisible"
+  // },
   {
     "key": "alt+m",
     "command": "cursorRight",
@@ -253,5 +273,15 @@
     "key": "ctrl+m",
     "command": "cursorWordRight",
     "when": "!vim.active"
+  },
+  {
+    "key": "alt+m",
+    "command": "editor.action.smartSelect.expand",
+    "when": "vim.active && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+k",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "vim.active && editorTextFocus && !editorReadonly"
   }
 ]

@@ -1,49 +1,5 @@
 {
-  "git.ignoreMissingGitWarning": true,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.suggestSelection": "first",
-  "editor.fontFamily": "Cascadia Code",
-  "editor.fontLigatures": true,
-  "explorer.confirmDelete": false,
-  "terminal.integrated.fontFamily": "CaskaydiaCove NF",
-  "javascript.preferences.quoteStyle": "single",
-  "editor.minimap.enabled": false,
-  "editor.find.cursorMoveOnType": false,
-  "vsicons.dontShowNewVersionMessage": true,
-  "update.showReleaseNotes": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.fixAll.stylelint": true
-  },
-  "editor.formatOnSave": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["javascript", "typescript", "vue"],
-  "eslint.packageManager": "yarn",
-  "files.eol": "\n",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.tabSize": 2,
-  "editor.tabCompletion": "on",
-  "files.exclude": {
-    "**/node_modules": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "files.associations": {
-    "*.env.development": "env",
-    "*.env.production": "env"
-  },
-  "synthwave84.brightness": 0.45,
-  "errorLens.onSave": false,
-  "errorLens.messageBackgroundMode": "none",
-  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
-  "prettier.printWidth": 160,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-
-  "vim.smartRelativeLine": true,
+  
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.handleKeys": {
     "<C-s>": false,
@@ -55,7 +11,10 @@
     "<C-x>": false,
     "<C-y>": false,
     "<C-a>": false,
-    "<backspace>": false,
+    "<C-b>": false,
+    "<A-m>": false,
+    "<A>": false,
+    "<backspace>": false
   },
 
   // MULTI-COMMAND
@@ -310,13 +269,5 @@
       "before": ["e"],
       "commands": ["toggleVim", "editor.action.addSelectionToNextFindMatch"]
     }
-  ],
-
-  "workbench.startupEditor": "none",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.codeLensFontFamily": "CaskaydiaCove NF",
-  "extensions.ignoreRecommendations": true,
-  "git.suggestSmartCommit": false,
-"editor.fontSize": 13,
-"workbench.colorTheme": "Vim Dark Hard"
+  ]
 }
