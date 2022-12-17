@@ -1,5 +1,4 @@
 {
-  
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.handleKeys": {
     "<C-s>": false,
@@ -12,9 +11,7 @@
     "<C-y>": false,
     "<C-a>": false,
     "<C-b>": false,
-    "<A-m>": false,
-    "<A>": false,
-    "<backspace>": false
+    "<backspace>": false,
   },
 
   // MULTI-COMMAND
@@ -91,6 +88,10 @@
     {
       "before": ["r"],
       "after": [";"]
+    },
+    {
+      "before": ["v"],
+      "after": ["V"]
     },
 
     {
@@ -200,7 +201,11 @@
     {
       "before": ["e"],
       "commands": ["toggleVim", "editor.action.addSelectionToNextFindMatch"]
-    }
+    },
+    {
+      "before": ["v"],
+      "after": ["<Esc>"]
+    },
   ],
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
