@@ -1,4 +1,6 @@
 Import-Module posh-git
+Import-Module Terminal-Icons
+
 $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n'
 
 function utiliserDocker {
@@ -18,3 +20,23 @@ function linuxPath {
 }
 
 Set-Alias lpath linuxPath
+
+$tmp = [System.IO.Path]::GetTempFileName()
+if (Test-Path -PathType Leaf "$tmp") {
+    $dir = Get-Content "$tmp"
+    Remove-Item -Force "$tmp"
+    if ($dir -And (Test-Path -PathType Container "$dir")) {
+        if ("$dir" -ne "$pwd") {
+            cd "$dir"
+        }
+    }
+}
+Set-PSReadLineKeyHandler -Chord Ctrl+l -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('lfcd.ps1')
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+}
+
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle InlineView
+Set-PSReadLineKeyHandler -Chord "Ctrl+m" -Function AcceptSuggestion

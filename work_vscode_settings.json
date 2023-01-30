@@ -1,0 +1,387 @@
+{
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": true,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "sonarlint.connectedMode.connections.sonarqube": [
+  //   {
+  //     "connectionId": "sonar.fab-outils.k8s.pole-emploi.intra",
+  //     "serverUrl": "http://sonar.fab-outils.k8s.pole-emploi.intra"
+  //   }
+  // ],
+
+  "promyze.connection.apiKey": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SjFjMlZ5U1dRaU9pSTJNakkyTURBeU1XRmxaamN6T1RBd09UVmtOVE5rTkRjaUxDSm9iM04wSWpvaWNISnZiWGw2WlM1bVlXSXRiM1YwYVd4ekxtczRjeTV3YjJ4bExXVnRjR3h2YVM1cGJuUnlZU0lzSW5ObFkzVnlaU0k2Wm1Gc2MyVjkual9aQkM4dnpBZ1hHdmNvcHNvX3lWQjd0bGg0QmZRdDBrcjVjTGhqd240dkw2WXZUQnNqSVFQX2dDUlRTcWwzRU9xLTlyMW1OT0E3bEtGSzBXa0RUbGc=",
+  "editor.fontFamily": "Caskaydia Cove Nerd Font Mono, Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "files.exclude": {
+    "node_modules/*": true
+  },
+  "promyze.feature.disableSuggestion": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // "source.fixAll": true,
+    // "source.organizeImports": true
+    // "source.sortMembers": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "angular.enable-strict-mode-prompt": false,
+
+  "errorLens.messageBackgroundMode": "message",
+
+  "editor.cursorSurroundingLines": 15,
+
+  "window.openFoldersInNewWindow": "on",
+
+  "jestrunner.preserveEditorFocus": true,
+  "jestrunner.disableCodeLens": true,
+  "jestrunner.runOptions": ["-i"],
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": "C:\\WINDOWS\\System32\\cmd.exe"
+    },
+    "wt": {
+      "path": "C:\\Users\\apineau\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+    }
+  },
+  // "terminal.integrated.defaultProfile.windows": "wt",
+  // Custom Panda theme colors
+  "workbench.colorCustomizations": {
+    "[Panda Theme High Contrast]": {
+      "editor.selectionBackground": "#ffb86c6e"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Panda Theme High Contrast]": {
+      "textMateRules": [
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#E6E6E6"
+          }
+        },
+        {
+          "scope": [
+            "support.class",
+            "entity.name.type",
+            "entity.name.namespace",
+            "entity.other.attribute",
+            "entity.name.scope-resolution",
+            "entity.name.class",
+            "entity.name.type.class",
+            "variable.other"
+          ],
+          "settings": {
+            "foreground": "#9affa7d5"
+          }
+        }
+      ]
+    }
+  },
+
+  // "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "vim.statusBarColorControl": false,
+  "vim.handleKeys": {
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-f>": false,
+    "<C-c>": true,
+    "<C-v>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-y>": false,
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-q>": false,
+    "<C-g>": false,
+    "<backspace>": false
+  },
+
+  // MULTI-COMMAND
+  "multiCommand.commands": {
+    "extension.multiCommand.ctrld": {
+      "interval": 30, // Ne fonctionne pas sans cet interval
+      "sequence": ["toggleVim", "editor.action.addSelectionToNextFindMatch"]
+    },
+    "extension.multiCommand.ctrll": {
+      "interval": 30, // Ne fonctionne pas sans cet interval
+      "sequence": ["toggleVim", "cursorLeft"]
+    }
+  },
+
+  // VIM
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["e"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["g", "^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    },
+
+    {
+      "before": ["&"],
+      "after": ["1"]
+    },
+    {
+      "before": ["é"],
+      "after": ["2"]
+    },
+    {
+      "before": ["\""],
+      "after": ["3"]
+    },
+    {
+      "before": ["'"],
+      "after": ["4"]
+    },
+    {
+      "before": ["("],
+      "after": ["5"]
+    },
+    {
+      "before": ["-"],
+      "after": ["6"]
+    },
+    {
+      "before": ["è"],
+      "after": ["7"]
+    },
+    {
+      "before": ["_"],
+      "after": ["8"]
+    },
+    {
+      "before": ["ç"],
+      "after": ["9"]
+    },
+    {
+      "before": ["à"],
+      "after": ["0"]
+    },
+    {
+      "before": ["s"],
+      "after": [""]
+    },
+    {
+      "before": ["v"],
+      "after": ["V"]
+    },
+    {
+      "before": ["V"],
+      "after": ["v"]
+    },
+    {
+      "before": ["<C-c>"],
+      "after": ["y", "y"]
+    },
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "d", "d"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["e"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    },
+    {
+      "before": ["v"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-c>"],
+      "after": ["y"]
+    },
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["l"],
+      "after": ["j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["h"]
+    },
+    {
+      "before": ["m"],
+      "after": ["l"]
+    },
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<C-m>"],
+      "after": ["e"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["b"]
+    },
+    {
+      "before": [" "],
+      "commands": ["toggleVim"],
+      "after": ["a"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["toggleVim"],
+      "after": ["i"]
+    },
+    {
+      "before": ["i"],
+      "after": ["^"]
+    },
+    {
+      "before": ["p"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-o>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["O"],
+      "commands": ["cursorUpSelect"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["cursorDownSelect"]
+    },
+    {
+      "before": ["r"],
+      "after": [";"]
+    }
+  ],
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}
